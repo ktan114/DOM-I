@@ -49,14 +49,33 @@ for (let i = 0; i < 6; i++) {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // CTA
 
+// Text
+let ctaText = document.querySelector("h1");
+ctaText.innerHTML = siteContent["cta"]["h1"];
+
+// Button
+let ctaButton = document.querySelector("button");
+ctaButton.innerHTML = siteContent["cta"]["button"];
+
+// Image
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
 // Main Content
 
+let textTitle = document.getElementsByTagName("h4");
+textTitle[0].innerHTML = siteContent["main-content"]["features-h4"];
+textTitle[1].innerHTML = siteContent["main-content"]["about-h4"];
+textTitle[2].innerHTML = siteContent["main-content"]["services-h4"];
+textTitle[3].innerHTML = siteContent["main-content"]["product-h4"];
+textTitle[4].innerHTML = siteContent["main-content"]["vision-h4"];
+
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// Contact
+textTitle[5].innerHTML = siteContent["contact"]["contact-h4"];
