@@ -37,6 +37,26 @@ const siteContent = {
   },
 };
 
+// Header
+
+// Sets up the nav 
+let nav = document.querySelectorAll("nav a");
+counter = 1;
+for (let i = 0; i < 6; i++) {
+  nav[i].innerHTML = siteContent["nav"][`nav-item-${counter}`];
+  counter++;
+}
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// CTA
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+// Main Content
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
