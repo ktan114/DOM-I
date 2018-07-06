@@ -44,6 +44,7 @@ let nav = document.querySelectorAll("nav a");
 counter = 1;
 for (let i = 0; i < 6; i++) {
   nav[i].innerHTML = siteContent["nav"][`nav-item-${counter}`];
+  nav[i].style.color = "green";
   counter++;
 }
 
