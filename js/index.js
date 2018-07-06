@@ -48,6 +48,19 @@ for (let i = 0; i < 6; i++) {
   counter++;
 }
 
+// Prepend a new 'a' element to the navbar
+let navBar = document.querySelector("nav");
+let prependChild = document.createElement("a");
+prependChild.innerHTML = "Home";
+prependChild.style.color = "green";
+navBar.prepend(prependChild); 
+
+// Append a new 'a' element to the navbar
+let appendChild = document.createElement("h2");
+appendChild.innerHTML = "Send Great Ideas"
+appendChild.style.color = "blue"
+navBar.appendChild(appendChild);
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
